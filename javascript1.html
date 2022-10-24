@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="scripts.js"> </script>
+</head>
+<body>
+    <h2>cambio de texto</h2>
+    <p id="demo">Haz clic debajo y veras que passa</p>
+    <button onclick="document.getElementById('demo').innerHTML='Gracias por pulsar el boton'">Haz clic aqui</button>
+    <h2>Cambiar imagen</h2>
+    <img id="foto" width="800px" src="messi.jpg" alt="">
+    <br>
+    <button onclick="messi('barça')">Barça</button>
+    <button onclick="messi('psg')">Psg</button>
+    <button onclick="messi('argentina')">Argentina</button>
+    <h2>Estilos</h2>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='35px'">Hacer grande</button>
+    <br>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='20px'">Hacer mediano</button>
+    <br>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='10px'">Hacer pequeño</button>
+    <p id="cambioletra">Hazme mas grande, por favor</p>
+    <h2>Esconder y mostrar cosas</h2>
+    <div id="escondido">
+    <p>Yo voy a aparecer y desaparecer</p>
+    <p>Yo tambien voy a aparecer y desaparecer</p>
+    <p>Yo si voy a aparecer y desaparecer</p>
+    </div>
+    <button onclick="esconder()">Desaparecer</button>
+    <button onclick="mostrar()">Mostrar</button>
+    <h2>imprimir</h2>
+    <button onclick="imprimir()">imprimir</button>
+    <h2>calcular</h2>
+    <button onclick="calcular()">Calcular</button>
+    <h2>Contador de visitas</h2>
+    <button type="button" onClick="onClick()"> click me</button>
+    <p>clicks: <a id="clicks">0</a></p>
+    <h2>array</h2>
+    <button onclick="pruebaarrays()">array</button>
+    <p id="listaAlumnos"></p>
+    <button onclick="eliminar1()">eliminar primero</button>
+    <button onclick="eliminar2()">eliminar ultimo</button>
+    
+</body>
+</html>
